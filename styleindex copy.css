@@ -25,7 +25,6 @@ html {
 header {
   text-align: center;
   vertical-align: text-bottom;
-  background: var(--bgsecond);
 }
 
 nav {
@@ -33,7 +32,7 @@ nav {
 }
 
 #krlogo {
-  width: 100px;
+  width: 10vw;
   margin: 3vw;
 }
 
@@ -61,7 +60,7 @@ a:hover {
   text-shadow: 0 0 10px var(--hover);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   nav {
     flex-wrap: wrap;
     flex-direction: column;
@@ -73,36 +72,5 @@ a:hover {
 
   li {
     flex: 1 1 50%;
-  }
-}
-
-.products {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 25vw 25vw 25vw;
-  grid-template-rows: auto;
-}
-
-.productitem img {
-  width: 20vw;
-  border-radius: 50%;
-  transition: 400ms;
-}
-
-.productitem a {
-  font-family: comfortaa;
-  font-size: 20px;
-}
-
-.productitem img:hover {
-  border-radius: 5%;
-}
-
-@media screen and (max-width: 480px) {
-  .products {
-    grid-template-columns: 1fr 1fr;
-  }
-  .productitem img {
-    width: 30vw;
   }
 }
