@@ -1,0 +1,53 @@
+@import "styleindex.css";
+
+article {
+  display: flex;
+  justify-content: center;
+  margin: 10vw;
+}
+
+.producta {
+  color: var(--text);
+}
+
+.products {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  grid-template-rows: auto;
+}
+
+.productitem {
+  width: 25vw;
+  height: 25vw;
+}
+
+.productitem a {
+  font-family: comfortaa;
+  font-size: 20px;
+}
+
+.productitem img {
+  width: 20vw;
+  border-radius: 50%;
+  transition: 400ms;
+}
+
+.productitem img:hover {
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 480px) {
+  .products {
+    grid-template-columns: 30vw 30vw;
+  }
+
+  .productitem {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .productitem img {
+    width: 30vw;
+  }
+}

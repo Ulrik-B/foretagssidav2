@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&display=swap");
 
 :root {
-  --bg: #f3f3f4;
-  --bgsecond: #9888a5;
-  --hover: #01a7c2;
-  --text: #372248;
-  --accent: #007090;
+  --bg: #160F29;
+  --bgsecond: #3CDBD3;
+  --hover: #F75590;
+  --text: #F3DFC1;
 }
 
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 html {
@@ -20,19 +20,39 @@ html {
   color: var(--text);
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
+}
+
+article {
+  margin-left: 18.5vw;
+  margin-right: 18.5vw;
+}
+
+h1 {
+  font-family: comfortaa;
+  text-align: center;
+  padding: 3vw;
+}
+
+p {
+  font-family: comfortaa;
+  padding: 3vw;
 }
 
 header {
   text-align: center;
-  vertical-align: text-bottom;
+  background: var(--text);
 }
 
 nav {
   display: flex;
+  align-items: flex-end;
 }
 
+
 #krlogo {
-  width: 10vw;
+  width: 100px;
+  height: 100px;
   margin: 3vw;
 }
 
@@ -42,7 +62,7 @@ ul {
   list-style: none;
 }
 
-li {
+.navli {
   width: 20vw;
 }
 
@@ -50,7 +70,7 @@ a {
   font-family: bebas neue;
   text-decoration: none;
   font-size: 30px;
-  color: var(--text);
+  color: var(--bg);
   transition: 400ms;
 }
 
@@ -60,7 +80,11 @@ a:hover {
   text-shadow: 0 0 10px var(--hover);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+  article {
+    margin: 0;
+  }
+
   nav {
     flex-wrap: wrap;
     flex-direction: column;
@@ -73,4 +97,20 @@ a:hover {
   li {
     flex: 1 1 50%;
   }
+
+  footer {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--text);
+}
+
+.footerli {
+  width: 33.33vw;
 }

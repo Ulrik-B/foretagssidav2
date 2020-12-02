@@ -1,79 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&display=swap");
+@import "styleindex.css";
 
-:root {
-  --bg: #f3f3f4;
-  --bgsecond: #9888a5;
-  --hover: #01a7c2;
-  --text: #372248;
-  --accent: #007090;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
+article {
   display: flex;
   justify-content: center;
-  background: var(--bg);
+  margin: 10vw;
+}
+
+.producta {
   color: var(--text);
-  width: 100vw;
-  height: 100vh;
-}
-
-header {
-  text-align: center;
-  vertical-align: text-bottom;
-  background: var(--bgsecond);
-}
-
-nav {
-  display: flex;
-}
-
-#krlogo {
-  width: 100px;
-  margin: 3vw;
-}
-
-ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-
-li {
-  width: 20vw;
-}
-
-a {
-  font-family: bebas neue;
-  text-decoration: none;
-  font-size: 30px;
-  color: var(--text);
-  transition: 400ms;
-}
-
-a:hover {
-  letter-spacing: 1vw;
-  color: var(--hover);
-  text-shadow: 0 0 10px var(--hover);
-}
-
-@media screen and (max-width: 480px) {
-  nav {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-  ul {
-    flex-wrap: wrap;
-  }
-
-  li {
-    flex: 1 1 50%;
-  }
 }
 
 .products {
@@ -83,15 +17,20 @@ a:hover {
   grid-template-rows: auto;
 }
 
-.productitem img {
-  width: 20vw;
-  border-radius: 50%;
-  transition: 400ms;
+.productitem {
+  width: 25vw;
+  height: 25vw;
 }
 
 .productitem a {
   font-family: comfortaa;
   font-size: 20px;
+}
+
+.productitem img {
+  width: 20vw;
+  border-radius: 50%;
+  transition: 400ms;
 }
 
 .productitem img:hover {
@@ -100,8 +39,14 @@ a:hover {
 
 @media screen and (max-width: 480px) {
   .products {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30vw 30vw;
   }
+
+  .productitem {
+    width: 40vw;
+    height: 40vw;
+  }
+
   .productitem img {
     width: 30vw;
   }
